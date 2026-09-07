@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gta-sa-traffic"
+version = "0.1.0a1"
+description = "Explicit GTA San Andreas traffic graph authoring, NODES compiler and Blender CLI bridge"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Dryxio"}]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+sa-traffic = "sa_traffic.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/Dryxio/gta-sa-traffic"
+Issues = "https://github.com/Dryxio/gta-sa-traffic/issues"
+
+[tool.setuptools.packages.find]
+include = ["sa_traffic*"]
+
+[tool.setuptools.package-data]
+sa_traffic = ["data/*.json"]

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "profile": "sa_compact",
+  "nodes": [{"id": "junction", "position": [10, 10, 0], "kind": "vehicle"}],
+  "edges": [],
+  "navis": [],
+  "sources": {},
+  "routes": [
+    {"id": "west", "points": [[10, 10, 0], [-50, 10, 0]], "start_node": "junction", "lanes_forward": 1, "lanes_backward": 1},
+    {"id": "east", "points": [[10, 10, 0], [70, 10, 0]], "start_node": "junction", "lanes_forward": 1, "lanes_backward": 1},
+    {"id": "north-one-way", "points": [[10, 10, 0], [10, 70, 0]], "start_node": "junction", "lanes_forward": 1, "lanes_backward": 0},
+    {"id": "bridge", "points": [[40, -30, 12], [40, 50, 12]], "lanes_forward": 1, "lanes_backward": 1}
+  ]
+}

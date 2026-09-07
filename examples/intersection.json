@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "profile": "sa_compact",
+  "description": "Synthetic intersection for bridge validation; not approved or compiled game traffic.",
+  "nodes": [
+    {
+      "id": "west",
+      "position": [
+        -20,
+        0,
+        1
+      ],
+      "kind": "vehicle",
+      "flags": 123
+    },
+    {
+      "id": "center",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "east",
+      "position": [
+        20,
+        0,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "north",
+      "position": [
+        0,
+        20,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "south",
+      "position": [
+        0,
+        -20,
+        1
+      ],
+      "kind": "vehicle"
+    }
+  ],
+  "edges": [
+    {
+      "id": "w-c",
+      "source": "west",
+      "target": "center"
+    },
+    {
+      "id": "c-e",
+      "source": "center",
+      "target": "east"
+    },
+    {
+      "id": "s-c",
+      "source": "south",
+      "target": "center"
+    },
+    {
+      "id": "c-n",
+      "source": "center",
+      "target": "north"
+    }
+  ],
+  "routes": [
+    {
+      "id": "east-west",
+      "points": [
+        [
+          -20,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          20,
+          0,
+          1
+        ]
+      ],
+      "lanes_forward": 1,
+      "lanes_backward": 1,
+      "navi_width": 0,
+      "metadata": {
+        "status": "visualization_proposal"
+      }
+    },
+    {
+      "id": "north-south",
+      "points": [
+        [
+          0,
+          -20,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          20,
+          1
+        ]
+      ],
+      "lanes_forward": 1,
+      "lanes_backward": 1,
+      "navi_width": 0,
+      "metadata": {
+        "status": "visualization_proposal"
+      }
+    }
+  ]
+}

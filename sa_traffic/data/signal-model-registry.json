@@ -1,0 +1,50 @@
+{
+  "scope": "Native model identifiers only. Assets and extracted effect records are not distributed; verify your installation.",
+  "models": [
+    {
+      "id": 3855,
+      "name": "GAY_TRAFFIC_LIGHT",
+      "txd": "gay_xref"
+    },
+    {
+      "id": 3516,
+      "name": "vgsstriptlights1",
+      "txd": "vegtrafic2"
+    },
+    {
+      "id": 1350,
+      "name": "CJ_TRAFFIC_LIGHT4",
+      "txd": "CJ_traffic"
+    },
+    {
+      "id": 1351,
+      "name": "CJ_TRAFFIC_LIGHT5",
+      "txd": "CJ_traffic"
+    },
+    {
+      "id": 1352,
+      "name": "CJ_TRAFFIC_LIGHT3",
+      "txd": "CJ_traffic"
+    },
+    {
+      "id": 1262,
+      "name": "MTraffic4",
+      "txd": "mitraffic"
+    },
+    {
+      "id": 1283,
+      "name": "MTraffic1",
+      "txd": "mitraffic"
+    },
+    {
+      "id": 1284,
+      "name": "MTraffic2",
+      "txd": "mitraffic"
+    },
+    {
+      "id": 1315,
+      "name": "trafficlight1",
+      "txd": "dyntraffic"
+    }
+  ]
+}

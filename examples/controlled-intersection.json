@@ -1,0 +1,466 @@
+{
+  "schema_version": 1,
+  "profile": "sa_compact",
+  "nodes": [
+    {
+      "id": "west:in",
+      "position": [
+        60,
+        97,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "west:out",
+      "position": [
+        60,
+        103,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "east:in",
+      "position": [
+        140,
+        103,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "east:out",
+      "position": [
+        140,
+        97,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "north:in",
+      "position": [
+        103,
+        140,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "north:out",
+      "position": [
+        97,
+        140,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "south:in",
+      "position": [
+        97,
+        60,
+        1
+      ],
+      "kind": "vehicle"
+    },
+    {
+      "id": "south:out",
+      "position": [
+        103,
+        60,
+        1
+      ],
+      "kind": "vehicle"
+    }
+  ],
+  "edges": [],
+  "routes": [],
+  "navis": [],
+  "sources": {},
+  "junctions": [
+    {
+      "id": "demo",
+      "enforcement": "native_navigation",
+      "ports": [
+        {
+          "id": "west",
+          "entry_node": "west:in",
+          "exit_node": "west:out"
+        },
+        {
+          "id": "east",
+          "entry_node": "east:in",
+          "exit_node": "east:out"
+        },
+        {
+          "id": "north",
+          "entry_node": "north:in",
+          "exit_node": "north:out"
+        },
+        {
+          "id": "south",
+          "entry_node": "south:in",
+          "exit_node": "south:out"
+        }
+      ],
+      "movements": [
+        {
+          "from": "west",
+          "to": "east",
+          "points": [
+            [
+              60.0,
+              97.0,
+              1
+            ],
+            [
+              78.125,
+              97.8438,
+              1.0
+            ],
+            [
+              100.0,
+              98.125,
+              1.0
+            ],
+            [
+              121.875,
+              97.8438,
+              1.0
+            ],
+            [
+              140.0,
+              97.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "west",
+          "to": "south",
+          "points": [
+            [
+              60.0,
+              97.0,
+              1
+            ],
+            [
+              74.9453,
+              94.6641,
+              1.0
+            ],
+            [
+              88.4375,
+              86.5625,
+              1.0
+            ],
+            [
+              98.4609,
+              74.4297,
+              1.0
+            ],
+            [
+              103.0,
+              60.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "east",
+          "to": "west",
+          "points": [
+            [
+              140.0,
+              103.0,
+              1
+            ],
+            [
+              121.875,
+              102.1562,
+              1.0
+            ],
+            [
+              100.0,
+              101.875,
+              1.0
+            ],
+            [
+              78.125,
+              102.1562,
+              1.0
+            ],
+            [
+              60.0,
+              103.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "east",
+          "to": "north",
+          "points": [
+            [
+              140.0,
+              103.0,
+              1
+            ],
+            [
+              125.0547,
+              105.3359,
+              1.0
+            ],
+            [
+              111.5625,
+              113.4375,
+              1.0
+            ],
+            [
+              101.5391,
+              125.5703,
+              1.0
+            ],
+            [
+              97.0,
+              140.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "east",
+          "to": "south",
+          "points": [
+            [
+              140.0,
+              103.0,
+              1
+            ],
+            [
+              125.5703,
+              98.4609,
+              1.0
+            ],
+            [
+              113.4375,
+              88.4375,
+              1.0
+            ],
+            [
+              105.3359,
+              74.9453,
+              1.0
+            ],
+            [
+              103.0,
+              60.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "north",
+          "to": "west",
+          "points": [
+            [
+              103.0,
+              140.0,
+              1
+            ],
+            [
+              98.4609,
+              125.5703,
+              1.0
+            ],
+            [
+              88.4375,
+              113.4375,
+              1.0
+            ],
+            [
+              74.9453,
+              105.3359,
+              1.0
+            ],
+            [
+              60.0,
+              103.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "north",
+          "to": "east",
+          "points": [
+            [
+              103.0,
+              140.0,
+              1
+            ],
+            [
+              105.3359,
+              125.0547,
+              1.0
+            ],
+            [
+              113.4375,
+              111.5625,
+              1.0
+            ],
+            [
+              125.5703,
+              101.5391,
+              1.0
+            ],
+            [
+              140.0,
+              97.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "north",
+          "to": "south",
+          "points": [
+            [
+              103.0,
+              140.0,
+              1
+            ],
+            [
+              102.1562,
+              121.875,
+              1.0
+            ],
+            [
+              101.875,
+              100.0,
+              1.0
+            ],
+            [
+              102.1562,
+              78.125,
+              1.0
+            ],
+            [
+              103.0,
+              60.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "south",
+          "to": "west",
+          "points": [
+            [
+              97.0,
+              60.0,
+              1
+            ],
+            [
+              94.6641,
+              74.9453,
+              1.0
+            ],
+            [
+              86.5625,
+              88.4375,
+              1.0
+            ],
+            [
+              74.4297,
+              98.4609,
+              1.0
+            ],
+            [
+              60.0,
+              103.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "south",
+          "to": "east",
+          "points": [
+            [
+              97.0,
+              60.0,
+              1
+            ],
+            [
+              101.5391,
+              74.4297,
+              1.0
+            ],
+            [
+              111.5625,
+              86.5625,
+              1.0
+            ],
+            [
+              125.0547,
+              94.6641,
+              1.0
+            ],
+            [
+              140.0,
+              97.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        },
+        {
+          "from": "south",
+          "to": "north",
+          "points": [
+            [
+              97.0,
+              60.0,
+              1
+            ],
+            [
+              97.8438,
+              78.125,
+              1.0
+            ],
+            [
+              98.125,
+              100.0,
+              1.0
+            ],
+            [
+              97.8438,
+              121.875,
+              1.0
+            ],
+            [
+              97.0,
+              140.0,
+              1
+            ]
+          ],
+          "spacing": 10
+        }
+      ]
+    }
+  ],
+  "signals": [],
+  "description": "Four separate approaches; all cross-approach movements except west to north. Native directed navigation only; no guarantee against AI fallback. Synthetic geometry, driving validation pending."
+}
