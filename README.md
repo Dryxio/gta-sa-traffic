@@ -1,5 +1,7 @@
 # GTA SA Traffic
 
+**[Join the Discord community →](https://discord.gg/mgFRd2AzF8)**
+
 **Author roads with an AI agent or Blender CLI, then compile native San Andreas `NODES*.DAT` files.** Early alpha, for the audited PC `sa_compact` layout.
 
 This is an explicit graph authoring tool: an agent examines your map, proposes road centerlines, configures lanes and junctions, and validates the generated network. It does **not** automatically recognize every road in an arbitrary mesh or simulate GTA driving inside Blender.
