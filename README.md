@@ -13,6 +13,48 @@ This is an explicit graph authoring tool: an agent examines your map, proposes r
 
 A custom-map network on Perry Island has been tested by the maintainer in game with moving traffic. That is one integration test, not compatibility certification for every map, executable or mod stack. The public examples and tests are synthetic; Perry and GTA assets are not included.
 
+## See it on real maps
+
+All ten images below are **Blender renders/diagnostic previews**, not gameplay screenshots. Map assets stay local and are not included in this repository. The overlays show actual imported or compiled networks; they are not AI-generated concept images.
+
+### Perry Island: a new network on a custom map
+
+![Perry Island Caico village with the exported traffic network overlaid in cyan](docs/images/perry-network.jpg)
+
+**267 nodes · 271 segments.** A retrospective visualization of the final exported Caico network, using the corrected textured map import. The maintainer separately tested this network in game and observed moving traffic.
+
+| Inspect the intersection | Keep the map context visible |
+|---|---|
+| ![Perry intersection close-up with connected nodes and road segments](docs/images/perry-intersection.jpg) | ![Perry street and bridge context without the diagnostic overlay](docs/images/perry-context.jpg) |
+| Final network at street intersections. Cyan lines and white markers visualize exported connectivity. | The same custom-map context with the overlay hidden. Correct material splits preserve road and building textures. |
+
+### Vanilla San Andreas: import and edit an existing network
+
+![Original Grove Street map chunk in Blender with imported vanilla vehicle nodes and lane directions](docs/images/vanilla-overview.jpg)
+
+**Existing NODES are editable too.** This view comes from the original 64-region network, imported locally and displayed on a textured Grove Street chunk. Cyan markers identify nodes; yellow arrows/lines visualize permitted direction and estimated lane centers.
+
+| Original imported network | Edited, compiled, then reimported |
+|---|---|
+| ![Original Grove loop with the selected native node highlighted in pink](docs/images/vanilla-junction-before.jpg) | ![The same Grove loop after moving the selected node and reimporting the compiled NODES](docs/images/vanilla-junction-after.jpg) |
+| Pink highlights the native node selected for the edit. | The selected node moved 2 world units west; adjacent navigation geometry was rebuilt. |
+
+This was an actual file-level roundtrip, not a moved overlay: **64 regions imported, one node edited, region 15 rebuilt, all 63 other regions byte-identical, and the new position verified after DAT reimport.** No game files were installed or overwritten. This demonstrates editing support, not a recommended road redesign or a driving test. [Repeat the workflow with your own files →](docs/edit-existing-network.md)
+
+| Overpass and streets beneath | Street-level navigation detail |
+|---|---|
+| ![Vanilla overpass and surrounding streets with imported navigation overlays](docs/images/vanilla-bridge.jpg) | ![Original street junction with nodes, navigation centers and lane direction arrows](docs/images/vanilla-street-detail.jpg) |
+| Inspect elevation and separate road paths in the actual map context. | Inspect native connectivity and lane direction before making an edit. |
+
+### Native signal diagnostics
+
+| Compiled signal association | Imported native phase groups |
+|---|---|
+| ![A compiled Grove signal association displayed with its native green phase and direction filter](docs/images/signal-compiled.jpg) | ![Two imported native signal records showing different phase groups at the same time](docs/images/signal-native-pair.jpg) |
+| Manifest-driven preview at 12000 ms: phase group, controlled direction and declared placement marker. | At the same global-clock time, group 2 is green and group 1 is red. |
+
+Spheres/cubes are diagnostic markers, not replacement traffic-light models. Blue circles are **12-unit distance references**, not actual stopping footprints. These previews verify associations and phase display; they do not simulate vehicles. [Signal support and limitations →](docs/controls.md)
+
 ## Quick start (no game or Blender required)
 
 Python 3.10+:
