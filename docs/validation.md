@@ -15,3 +15,5 @@ Engine evidence: the maintainer has driven on the Perry custom-map test and obse
 ## Alpha release checks
 
 Local Python 3.14: 62 tests, 58 passed and four optional original-corpus tests skipped; the four actual Blender integration tests ran with Blender 5.2.1 LTS. Python 3.10: 62 tests, 54 passed and eight optional corpus/Blender tests skipped. Clean wheel build and installation into a new Python 3.13 virtual environment passed from outside the checkout, including control compilation and packaged signal registry. Synthetic overlay PNG was rendered and inspected. CI results are available in the repository Actions tab.
+
+Additional private-corpus check: all 62 tests passed with the maintainer’s local original 64-region corpus and Blender enabled (including byte-identical roundtrip of all 64 files). Only this aggregate result is published; the corpus and derived imported documents remain local.
