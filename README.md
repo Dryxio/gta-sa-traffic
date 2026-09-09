@@ -1,8 +1,8 @@
-# GTA SA Traffic
+# GTA Flow
 
 **[Join the Discord community →](https://discord.gg/mgFRd2AzF8)**
 
-**Author roads with an AI agent or Blender CLI, then compile native San Andreas `NODES*.DAT` files.** Early alpha, for the audited PC `sa_compact` layout.
+**Create and edit GTA San Andreas traffic routes with AI and Blender.** Early alpha, for the audited PC `sa_compact` layout.
 
 ## Get started with your AI
 
@@ -132,6 +132,6 @@ Synthetic core tests run without a game. Set `BLENDER_BIN` to enable actual Blen
 
 ## Related project
 
-[GTA 3D AI](https://github.com/Dryxio/gta-3d-ai) helps agents discover reusable GTA assets. This compiler lives separately because it is useful without an asset catalogue and has its own binary compatibility and validation requirements.
+[GTA Scout](https://github.com/Dryxio/gta-3d-ai) helps agents discover reusable GTA assets. This compiler lives separately because it is useful without an asset catalogue and has its own binary compatibility and validation requirements.
 
 MIT for this project's original code. See [NOTICE.md](NOTICE.md). No Rockstar assets, game executable, decompiler output or DragonFF code is bundled.
