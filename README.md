@@ -10,7 +10,7 @@
 
 Copy this into your agent:
 
-> Help me set up https://github.com/Dryxio/gta-sa-traffic. Read the README and agent guide, check what's already installed on my computer, and help me install what's missing, including Blender for the preview. Start with the included road intersection example: show me its traffic routes in Blender, check that the network is valid, and export the traffic files. Save the Blender scene and a preview image so I can see the result.
+> Help me set up https://github.com/Dryxio/gta-flow. Read the README and agent guide, check what's already installed on my computer, and help me install what's missing, including Blender for the preview. Start with the included road intersection example: show me its traffic routes in Blender, check that the network is valid, and export the traffic files. Save the Blender scene and a preview image so I can see the result.
 
 No GTA files are needed for this first example. The Blender preview shows the routes; testing cars driving on them happens in the game.
 
@@ -81,8 +81,8 @@ Prefer to install it yourself? Expand the instructions below.
 Python 3.10+:
 
 ```sh
-git clone https://github.com/Dryxio/gta-sa-traffic.git
-cd gta-sa-traffic
+git clone https://github.com/Dryxio/gta-flow.git
+cd gta-flow
 python -m venv .venv
 # POSIX: source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -132,6 +132,6 @@ Synthetic core tests run without a game. Set `BLENDER_BIN` to enable actual Blen
 
 ## Related project
 
-[GTA Scout](https://github.com/Dryxio/gta-3d-ai) helps agents discover reusable GTA assets. This compiler lives separately because it is useful without an asset catalogue and has its own binary compatibility and validation requirements.
+[GTA Scout](https://github.com/Dryxio/gta-scout) helps agents discover reusable GTA assets. This compiler lives separately because it is useful without an asset catalogue and has its own binary compatibility and validation requirements.
 
 MIT for this project's original code. See [NOTICE.md](NOTICE.md). No Rockstar assets, game executable, decompiler output or DragonFF code is bundled.

@@ -16,8 +16,8 @@ classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Pytho
 sa-traffic = "sa_traffic.__main__:main"
 
 [project.urls]
-Repository = "https://github.com/Dryxio/gta-sa-traffic"
-Issues = "https://github.com/Dryxio/gta-sa-traffic/issues"
+Repository = "https://github.com/Dryxio/gta-flow"
+Issues = "https://github.com/Dryxio/gta-flow/issues"
 
 [tool.setuptools.packages.find]
 include = ["sa_traffic*"]
