@@ -4,6 +4,18 @@
 
 **Author roads with an AI agent or Blender CLI, then compile native San Andreas `NODES*.DAT` files.** Early alpha, for the audited PC `sa_compact` layout.
 
+## Get started with your AI
+
+**Give your AI this repo and tell it what you want to do.** It can check your setup, install the tools it needs, and walk you through anything that needs your help. Use an AI coding agent that can access files and run commands on your computer.
+
+Copy this into your agent:
+
+> Help me set up https://github.com/Dryxio/gta-sa-traffic. Read the README and agent guide, check what's already installed on my computer, and help me install what's missing, including Blender for the preview. Start with the included road intersection example: show me its traffic routes in Blender, check that the network is valid, and export the traffic files. Save the Blender scene and a preview image so I can see the result.
+
+No GTA files are needed for this first example. The Blender preview shows the routes; testing cars driving on them happens in the game.
+
+## What it does
+
 This is an explicit graph authoring tool: an agent examines your map, proposes road centerlines, configures lanes and junctions, and validates the generated network. It does **not** automatically recognize every road in an arbitrary mesh or simulate GTA driving inside Blender.
 
 - Create a road network from zero, or import and edit your own existing NODES.
@@ -57,6 +69,13 @@ This was an actual file-level roundtrip, not a moved overlay: **64 regions impor
 
 Spheres/cubes are diagnostic markers, not replacement traffic-light models. Blue circles are **12-unit distance references**, not actual stopping footprints. These previews verify associations and phase display; they do not simulate vehicles. [Signal support and limitations →](docs/controls.md)
 
+## Manual setup
+
+Prefer to install it yourself? Expand the instructions below.
+
+<details>
+<summary>Manual installation, configuration and examples</summary>
+
 ## Quick start (no game or Blender required)
 
 Python 3.10+:
@@ -89,6 +108,8 @@ To inspect your map, open its `.blend` instead of `--factory-startup`. The bridg
 A suggested prompt:
 
 > Read AGENTS.md. Inspect my custom map in Blender, propose an explicit vehicle road network for this chunk, configure directions and junctions, verify surfaces, compile and inspect the exported nodes. Use my supplied game files only as local context. Report unsupported cases and provide NODES plus a manifest; keep the original game unchanged.
+
+</details>
 
 ## Scope and limits
 
